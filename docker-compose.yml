@@ -9,9 +9,9 @@ services:
       - 3001:3001
       - 3002:3002
     volumes:
-      - /Users/nareshmaharaj/Documents/aerospike/docker/docker-compose/aerospike/enterprise/etc:/opt/aerospike/etc/
-      - /Users/nareshmaharaj/Documents/aerospike/docker/docker-compose/aerospike/enterprise/data:/opt/aerospike/data
-      - /Users/nareshmaharaj/Documents/aerospike/docker/docker-compose/aerospike/enterprise/log:/var/log/aerospike
+      - /Users/me/Documents/aerospike/docker/docker-compose/aerospike/enterprise/etc:/opt/aerospike/etc/
+      - /Users/me/Documents/aerospike/docker/docker-compose/aerospike/enterprise/data:/opt/aerospike/data
+      - /Users/me/Documents/aerospike/docker/docker-compose/aerospike/enterprise/log:/var/log/aerospike
     environment:
      - NAMESPACE=test
      - LOGFILE=/var/log/aerospike/aerospike.log
