@@ -11,13 +11,3 @@ Establish volumes for the following directories
 Map the ports for the container 3000-3002
 
 Create a docker network.
-
-
-
-
-
-
-# docker-compose-aerospike-enterprise
-# docker-compose-aerospike-enterprise
-# docker-compose-aerospike-enterprise
-# docker-compose-aerospike-enterprise
