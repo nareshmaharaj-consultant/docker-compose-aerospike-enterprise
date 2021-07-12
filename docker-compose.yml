@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  aerospike:
+    image: aerospike/aerospike-server-enterprise
+    container_name: aerospike
+    ports:
+      - 3000:3000
+      - 3001:3001
+      - 3002:3002
+    volumes:
+      - /Users/nareshmaharaj/Documents/aerospike/docker/docker-compose/aerospike/enterprise/etc:/opt/aerospike/etc/
+      - /Users/nareshmaharaj/Documents/aerospike/docker/docker-compose/aerospike/enterprise/data:/opt/aerospike/data
+      - /Users/nareshmaharaj/Documents/aerospike/docker/docker-compose/aerospike/enterprise/log:/var/log/aerospike
+    environment:
+     - NAMESPACE=test
+     - LOGFILE=/var/log/aerospike/aerospike.log
+     - FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf
+    networks:
+      testnet:
+        aliases:
+          - aerospike_net
+#volumes:
+#  aerospike-etc:
+#  aerospike-data:  
+networks:
+  testnet:
